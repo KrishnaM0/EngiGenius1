@@ -1,0 +1,16 @@
+<% layout("/layouts/boilerplate")%>
+<body>
+    <div class="mobile-show-container">
+        <div class="show-container col-6 offset-3 mt-4 mb-4">
+            <img src="<%=blog.image%>" alt="blog-img" class="show-blog-img">
+            <div class="blog-content">
+                <h4><b><%=blog.title%></b></h4>
+                <p>By <a href="#" class="author-name"><i><%=blog.author%></i></a></p>
+                <hr>
+                <div class="blogContent">
+                    <%-blog.content%>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

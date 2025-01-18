@@ -221,7 +221,25 @@ hr{
     margin-left: 0.6rem;
     margin-right: 0.6rem;
 }
+.show-container{
+    border: 0.2rem solid rgba(84, 82, 82, 0.5);
+    border-radius: 1rem;
+    width: 60%;
+    margin: auto;  
+}
+.show-blog-img{
+    width: 100%;
+    height : 20rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
 
+}
+.blog-content{
+    padding : 1rem;
+}
+.blogContent p{
+    padding-left: 1rem;
+}
 
 @media (max-width: 768px) {  
     .card-img{
@@ -261,6 +279,12 @@ hr{
         margin: 0.5rem !important;
     }
     .index-container{
+        padding: 0.5rem !important;
+    }
+    .show-container{
+        width : 100% !important;
+    }
+    .mobile-show-container{
         padding: 0.5rem !important;
     }
 }

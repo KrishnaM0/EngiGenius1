@@ -14,7 +14,7 @@
                             <h5 class="card-title"><b><%=blog.title%></b></h5>
                             <span>By <a class="card-text author-name"><i><%=blog.author%></i></a></span>
                             <p class="card-text"><%=blog.snippet%></p>
-                            <form action="">
+                            <form action="/show/<%=blog._id%>" method="get">
                                 <button class="btn btn-success">Read More</button>
                             </form>
                         </div>

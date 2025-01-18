@@ -23,6 +23,24 @@ app.get("/new", (req, res)=>{
     res.render("pages/new.ejs");
 });
 
+// let contentPost = async ()=>{
+//     const fs = require("fs");
+//     const htmlContent = fs.readFileSync('content.html', 'utf-8');
+//     await Blogs.updateOne(
+//       { title: "Understanding Cryptocurrency: Bitcoin"},
+//       { $set: { content: htmlContent } }
+//     );
+//     console.log("updated..!");
+// };
+// contentPost();
+
+app.get("/show/:id", async (req, res)=>{
+    let {id} = req.params;
+    let blog = await Blogs.findById(id);
+    let blogs = await Blogs.find();
+    res.render("pages/show.ejs", {blog, blogs});
+});
+
 app.get("/blogs", async (req, res)=>{
     let blogs = await Blogs.find();
     res.render("pages/blogs.ejs", {blogs});
