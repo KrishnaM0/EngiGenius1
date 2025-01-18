@@ -15,6 +15,7 @@ let blogSchema = new mongoose.Schema({
     },
     content : {
         type : String,
+        required : true,
     },
     snippet : {
         type : String,
