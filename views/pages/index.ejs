@@ -1,0 +1,27 @@
+<% layout("/layouts/boilerplate")%>
+<body>
+    <div class = "index-container">
+        <h3 class="latest">Latest Posts</h3>
+        <hr>
+        <%for(blog of blogs){%>
+            <div class="card mb-3" style="max-width: 575px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img style = "object-fit:cover;height: 100%;" src="<%=blog.image%>" class="img-fluid rounded-start card-img" alt="blog-img">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title"><b><%=blog.title%></b></h5>
+                            <span>By <a class="card-text author-name"><i><%=blog.author%></i></a></span>
+                            <p class="card-text"><%=blog.snippet%></p>
+                            <form action="">
+                                <button class="btn btn-success">Read More</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <%}%>
+    </div>
+    <br><br><br><br>
+</body>

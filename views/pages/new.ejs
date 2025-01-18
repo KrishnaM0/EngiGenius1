@@ -1,0 +1,45 @@
+<% layout("/layouts/boilerplate") %>
+
+<body>
+    <div class = "new-container">
+        <form action="/" method = "POST" class="needs-validation" novalidate>
+            <div class = "edit-form">
+                <h3 class = "edit-form-header">Create new blog</h3>
+                <hr>
+                <div class = "form">
+                    <div><label for="title" class="form-label">Title</label></div>
+                    <input class="form-control" id = "title" type="text" name = "blog[title]" placeholder = "title" required>
+                    <p class="valid-feedback">Looks good!</p>
+                    <p class="invalid-feedback">Title should be valid!</p>
+                </div>
+
+                <div class = "form">
+                    <div><label for="image" class="form-label">Blog Image</label></div>
+                    <input class="form-control" id = "image" type="text" name = "blog[image]" placeholder = "image url" required>   
+                    <p class="invalid-feedback">Image should be valid!</p>
+                </div>
+                
+                <div class = "form">
+                    <div><label for="author" class="form-label">Author Name</label></div>
+                    <input class="form-control" id = "author" type="text" name = "blog[author]" placeholder = "author name" required>   
+                    <p class="invalid-feedback">Author name should be valid!</p>
+                </div>
+
+                <div class = "form">
+                    <div><label for="snippet" class="form-label">Add Snippet</label></div>
+                    <textarea class="form-control" id = "snippet" type="text" name = "blog[snippet]" placeholder = "snippet" required></textarea>
+                    <p class="invalid-feedback">Snippet should be valid!</p>
+                </div>
+
+                <div class = "form">
+                    <div><label for="content" class="form-label">Add Content</label></div>
+                    <textarea class="form-control" id = "content" type="text" name = "blog[content]" placeholder = "content"></textarea>
+                    <p class="invalid-feedback">Content should be valid!</p>
+                </div>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-success">Create</button>
+        </form>
+    </div>
+    <br><br><br>
+</body>
