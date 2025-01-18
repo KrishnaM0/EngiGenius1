@@ -41,6 +41,12 @@ app.get("/show/:id", async (req, res)=>{
     res.render("pages/show.ejs", {blog, blogs});
 });
 
+// app.delete("/show/:id", async (req, res)=>{
+//     let {id} = req.params;
+//     await Blogs.findByIdAndDelete(id);
+//     res.redirect("/");
+// });
+
 app.get("/blogs", async (req, res)=>{
     let blogs = await Blogs.find();
     res.render("pages/blogs.ejs", {blogs});
@@ -48,6 +54,21 @@ app.get("/blogs", async (req, res)=>{
 
 app.get("/contact", (req, res)=>{
     res.render("pages/contact.ejs");
+});
+
+app.get("/about", (req, res)=>{
+    res.render("pages/about.ejs");
+});
+
+app.post("/", async (req, res) =>{
+    let newBlog = new Blogs(req.body.blog);
+    await newBlog.save();
+    res.redirect("/");
+});
+
+app.get("/", async (req, res)=>{
+    let blogs = await Blogs.find();
+    res.render("pages/index.ejs", {blogs});
 });
 
 app.post("/contact", async (req, res)=>{
@@ -78,21 +99,6 @@ app.post("/contact", async (req, res)=>{
         console.error("Error sending email: ", error);
         res.status(500).send("There was an error sending your message. Please try again later.");
     }
-});
-
-app.get("/about", (req, res)=>{
-    res.render("pages/about.ejs");
-});
-
-app.post("/", async (req, res) =>{
-    let newBlog = new Blogs(req.body.blog);
-    await newBlog.save();
-    res.redirect("/");
-});
-
-app.get("/", async (req, res)=>{
-    let blogs = await Blogs.find();
-    res.render("pages/index.ejs", {blogs});
 });
 
 app.listen(8080, ()=>{
