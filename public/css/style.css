@@ -257,4 +257,13 @@ hr{
         padding-left: 0rem;
         padding-right: 0rem;
     }
+    .new-container{
+        margin: 0.5rem !important;
+    }
+    .edit-form-header{
+        text-align: center;
+    }
+    .index-container{
+        padding: 0.5rem !important;
+    }
 }
