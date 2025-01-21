@@ -2,5 +2,5 @@
 <p>• Developing an interactive blogging website.</p>
 <p>• Creating profiles for different authors to publish blogs across various categories.</p>
 <p>• Allowing users to access and read the published blogs.</p>
-<p>Not completed yet...</p>
+
 Live Link: - https://engigenius.onrender.com
