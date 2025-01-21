@@ -1,6 +1,5 @@
 const newBlogs =[
     {
-      _id: ObjectId('678ab8bf96a7547e5fea272a'),
       title: 'What is Gig Economy?',
       image: 'https://media.licdn.com/dms/image/C5612AQFkQ0gkxQFGhQ/article-cover_image-shrink_720_1280/0/1583151785069?e=2147483647&v=beta&t=V8I6zT3fZiQU-bnWCw8J_bCN8jmoxAX5OUk_Mp4knNc',
       author: 'Krishna Muskawad',
@@ -150,10 +149,8 @@ const newBlogs =[
         '\r\n' +
         '</p>\r\n',
       snippet: 'Gig Economy refers that, rather than providing permanent jobs to the workers. Short-term, freelance, contract-work is being offered...',
-      __v: 0
     },
     {
-      _id: ObjectId('678bacb21738b6c26498fb96'),
       title: 'Cybersecurity: Securing Your Business',
       image: 'https://www.securitymagazine.com/ext/resources/cyber-security-3400555_1280.jpg?1556639494',
       author: 'Krishna Muskawad',
@@ -490,10 +487,8 @@ const newBlogs =[
         '\r\n' +
         '</p>',
       snippet: 'Cybersecurity is about protecting systems, networks and software from threats. These attacks usually focus on data...\r\n',
-      __v: 0
     },
     {
-      _id: ObjectId('678bb00c1738b6c26498fbba'),
       title: 'What are Economic Sanctions?',
       image: 'https://img.forbes.kz/forbes-photobank/media/2024-06-14/4a69d8af-de34-42ed-912b-492cc22ca994.webp',
       author: 'Krishna Muskawad',
@@ -623,10 +618,8 @@ const newBlogs =[
         '\r\n' +
         '</p>',
       snippet: 'Economic sanctions are nothing but tools, which are utilized by nations or universal associations to influence the behaviour of other countries...\r\n',
-      __v: 0
     },
     {
-      _id: ObjectId('678bb04a1738b6c26498fbbd'),
       title: 'What is Inflation?',
       image: 'https://radiologybusiness.com/sites/default/files/styles/top_stories/public/2020-11/profits-1953616_1280.jpg.webp?itok=1wcW949G',
       author: 'Krishna Muskawad',
@@ -756,10 +749,8 @@ const newBlogs =[
         '\r\n' +
         '</p>',
       snippet: 'It refers to increasing prices of goods and services over time. But when inflation occurs, the purchasing power of money decreases...\r\n',
-      __v: 0
     },
     {
-      _id: ObjectId('678bb0ab1738b6c26498fbc0'),
       title: 'Understanding Cryptocurrency: Bitcoin',
       image: 'https://cdn.prod.website-files.com/6484144ee6dda9d4b9ab7f57/6603eef4731533b8de40f36a_Blockchain%20and%20Cryptocurrency%201200x600.webp',
       author: 'Krishna Muskawad',
@@ -905,10 +896,8 @@ const newBlogs =[
         '\r\n' +
         '</p>',
       snippet: 'Bitcoin is a digital currency. It allows users to send and receive money over the internet. It is decentralized and operates on peer-to-peer network...\r\n',
-      __v: 0
     },
     {
-      _id: ObjectId('678bb1e21738b6c26498fbc4'),
       title: 'What is Blockchain Technology?',
       image: 'https://www.innominds.com/hubfs/MicrosoftTeams-image%20(17)-3.png',
       author: 'Krishna Muskawad',
@@ -1000,7 +989,6 @@ const newBlogs =[
         '        business and market is growing, as businesses and industries continue to explore and adopt blockchain technology.\r\n' +
         '    </p>',
       snippet: 'A Blockchain is a type of digital record of transactions. Where traditional databases like SQL databases, which are maintained by a single entity...\r\n',
-      __v: 0
     }
 ];
 

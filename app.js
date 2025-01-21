@@ -10,7 +10,8 @@ const ejsMate = require("ejs-mate");
 const Blogs = require("./models/blogs.js");
 const nodemailer = require("nodemailer");
 
-mongoose.connect('mongodb://127.0.0.1:27017/EngiGenius');
+const dburl = process.env.MDBURL;
+mongoose.connect(dburl);
 
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
