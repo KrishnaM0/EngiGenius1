@@ -194,7 +194,8 @@ hr{
 .contact-div{
     margin : 1rem;
     padding : 3rem;
-    border: 0.2rem solid rgba(84, 82, 82, 0.5);
+    /* border: 0.2rem solid rgba(84, 82, 82, 0.5); */
+    border: none;
     border-radius: 1rem;
     box-shadow: 0rem 0rem 0.5rem grey;
     width: 50%;
@@ -220,7 +221,7 @@ hr{
     right : 0;
 }
 .follow-div a i{
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin-left: 0.6rem;
     margin-right: 0.6rem;
 }
@@ -246,8 +247,14 @@ hr{
 .btn-outline-danger{
     margin: 1rem;
 }
+.fa-whatsapp,
+.fa-instagram{
+    font-weight: 600;
+}
 
-@media (max-width: 768px) {  
+
+/*  */
+@media (max-width: 930px) {  
     .card-img{
         border-top-left-radius: 1rem !important;
         border-top-right-radius: 1rem !important;
@@ -273,6 +280,10 @@ hr{
     .searching{
         margin-bottom : 1rem;
     }
+    .contact-container{
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
     .contact-div{
         width: 100%;
         padding : 2rem;
@@ -292,5 +303,10 @@ hr{
     }
     .mobile-show-container{
         padding: 0.5rem !important;
+    }
+    .follow-div a i{
+        font-size: 1.5rem;
+        margin-left: 0.4rem;
+        margin-right: 0.4rem;
     }
 }
