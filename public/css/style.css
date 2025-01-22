@@ -43,6 +43,9 @@ body{
     color: white;
     font-weight: bold;
 }
+.nav-links a:hover{
+    text-decoration: overline;
+}
 
 /*  */
 .sid-nav {

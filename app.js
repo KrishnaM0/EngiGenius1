@@ -49,7 +49,18 @@ app.get("/show/:id", async (req, res)=>{
 // });
 
 app.get("/blogs", async (req, res)=>{
-    let blogs = await Blogs.find();
+    const { searchQuery } = req.query || "";
+    let query = {};
+    if (searchQuery) {
+        query = {
+            $or: [
+                { title: { $regex: searchQuery, $options: 'i' } }, // Case-insensitive search for course title
+                { author: { $regex: searchQuery, $options: 'i' } },  // Case-insensitive search for tutor name
+                { snippet: { $regex: searchQuery, $options: 'i' } }
+            ],
+        };
+    };
+    let blogs = await Blogs.find(query);
     res.render("pages/blogs.ejs", {blogs});
 });
 
